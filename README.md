@@ -76,7 +76,7 @@ Após encontrados os melhores pesos, é feita a etapa de teste para verificar a 
        python test.py --dataset_name EEG --model_dir $LOG_DIR
 ```
 
-As bases de dados adaptadas para o formato .pt, utilizado nos experimentos, podem ser acessadas em: [Database](https://drive.google.com/file/d/1coIzuGMc5Hxv-EEvKsKFGpj6i-10XAw1/view?usp=sharing) 
+####As bases de dados adaptadas para o formato .pt, utilizado nos experimentos, podem ser acessadas em: [Dataset](https://drive.google.com/file/d/1coIzuGMc5Hxv-EEvKsKFGpj6i-10XAw1/view?usp=sharing) 
 ---
 
 

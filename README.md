@@ -58,6 +58,12 @@ Após encontrar a melhor arquitetura, o próximo passo é otimizar os pesos dest
 ```
        python main.py --dataset_name EEG --final 1 --serach_dir $LOG_DIR --config_file ./configs/config_final.json
 ```
+
+Para inclusão da operação de reservoir, basta incluir os argumentos:
+```
+       --reservoir_size $TAM --sparsity $VAL --spectral_radius $VAL --reservoir_operation $OPERATION
+``` 
+
 ### Como rodar a etapa de teste
 Após encontrados os melhores pesos, é feita a etapa de teste para verificar a arquitetura e os pesos encontrados no conjunto de teste da base de dados utilizada. 
 
@@ -67,7 +73,7 @@ Após encontrados os melhores pesos, é feita a etapa de teste para verificar a 
 ```
 **Physionet EEG Database:** 
 ```
-       python main.py --dataset_name EEG --model_dir $LOG_DIR
+       python test.py --dataset_name EEG --model_dir $LOG_DIR
 ```
 
 ---

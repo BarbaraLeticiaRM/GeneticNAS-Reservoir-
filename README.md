@@ -4,20 +4,20 @@
 **Evoluindo Arquiteturas 1D: Busca Neural Genética com Reservoir Computing**
 
 ### Sobre o Projeto (About)
-Este repositório contém a implementação oficial da dissertação de mestrado apresentada ao Programa de Pós-Graduação em Ciência da Computação da UFOP. O projeto propõe uma extensão à estratégia **[Genetic Network Architecture Search (GeneticNAS)](https://github.com/haihabi/GeneticNAS.git)**, adaptando-a para o processamento de sinais unidimensionais (1D) e adicionando a operação de **Reservoir Computing (RC)** ao seu espaço de busca,.
+Este repositório contém a implementação oficial da dissertação de mestrado apresentada ao Programa de Pós-Graduação em Ciência da Computação da UFOP. O projeto propõe uma extensão à estratégia **[Genetic Network Architecture Search (GeneticNAS)](https://github.com/haihabi/GeneticNAS.git)**, adaptando-a para o processamento de sinais unidimensionais (1D) e adicionando a operação de **Reservoir Computing (RC)** ao seu espaço de busca.
 
-O objetivo central é automatizar a criação de arquiteturas de redes neurais otimizadas para classificação de séries temporais, combinando a eficiência do *Weight Sharing* (compartilhamento de pesos) com a capacidade do Reservoir Computing de modelar dinâmicas temporais,.
+O objetivo central é automatizar a criação de arquiteturas de redes neurais otimizadas para classificação de séries temporais, combinando a eficiência do *Weight Sharing* (compartilhamento de pesos) com a capacidade do Reservoir Computing de modelar dinâmicas temporais.
 
 ### Principais Funcionalidades
 *   **GeneticNAS Adaptado para 1D:** Modificação do algoritmo original (focado em imagens) para operar com sinais unidimensionais como ECG e EEG.
-*   **Novo Operador de Reservoir Computing:** Implementação de uma *Echo State Network* (ESN) encapsulada como um operador no espaço de busca do NAS. Inclui controle de hiperparâmetros como tamanho do reservatório, raio espectral e esparsidade,.
-*   **Espaço de Busca Híbrido:** O algoritmo pode escolher entre operações convolucionais (Conv1D), Pooling e Reservoir Computing para compor as células da rede,.
-*   **Otimização em Dois Estágios:** Busca da arquitetura utilizando Algoritmo Genético com SGD, seguida pela otimização dos pesos da melhor arquitetura encontrada,.
+*   **Novo Operador de Reservoir Computing:** Implementação de uma *Echo State Network* (ESN) encapsulada como um operador no espaço de busca do NAS. Inclui controle de hiperparâmetros como tamanho do reservatório, raio espectral e esparsidade.
+*   **Espaço de Busca Híbrido:** O algoritmo pode escolher entre operações convolucionais (Conv1D), Pooling e Reservoir Computing para compor as células da rede.
+*   **Otimização em Dois Estágios:** Busca da arquitetura utilizando Algoritmo Genético com SGD, seguida pela otimização dos pesos da melhor arquitetura encontrada.
 
 ### Bases de Dados Utilizadas
 Os experimentos foram configurados para rodar nas seguintes bases de dados (com pré-processamento específico incluído no código):
-1.  **MIT-BIH Arrhythmia Database:** Classificação de arritmias cardíacas em 4 classes, utilizando janelas de batimentos normalizadas,.
-2.  **Physionet EEG Database:** Tarefa de biometria baseada em eletroencefalograma (Motor Imagery), utilizando a banda de frequência gama (30-50 Hz),.
+1.  **MIT-BIH Arrhythmia Database:** Classificação de arritmias cardíacas em 4 classes, utilizando janelas de batimentos normalizadas.
+2.  **Physionet EEG Database:** Tarefa de biometria baseada em eletroencefalograma (Motor Imagery), utilizando a banda de frequência gama (30-50 Hz).
 
 ### Requisitos do Sistema
 Conforme o setup experimental descrito na dissertação, o código foi validado no seguinte ambiente:
